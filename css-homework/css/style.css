@@ -206,8 +206,49 @@
 }
 .gallery-section img {
   max-width: 100%;
-  width: 20vw;
+  width: 32.8vw;
   height: auto;
 }
 .gallery-section span {
-display: none;
+  display: none;
+}
+.gallery-section img:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 109, 5, 0.8) 0%,
+    rgba(255, 126, 34, 0.8) 100%
+  );
+}
+
+/* end  */
+
+/* section download */
+.download {
+  height: 50vh;
+  background-color: #212529;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.download h2 {
+  margin-top: 10rem;
+  color: white;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 100;
+  padding-bottom: 1.5rem;
+}
+.download button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: white;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10rem;
+}
+.download button a {
+  color: #000000;
+  text-decoration: none;
+}
