@@ -203,23 +203,184 @@
 .gallery-section {
   display: flex;
   flex-wrap: wrap;
+  background-color: #212529;
 }
-.gallery-section img {
+.image-gallery {
+  position: relative;
+}
+.image-gallery img {
   max-width: 100%;
   width: 32.8vw;
   height: auto;
 }
-.gallery-section span {
-  display: none;
+.image-gallery span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
 }
-.gallery-section img:hover {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 109, 5, 0.8) 0%,
-    rgba(255, 126, 34, 0.8) 100%
-  );
+.image-gallery:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+.image-gallery2 {
+  position: relative;
+}
+.image-gallery2 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery2 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery2:hover span {
+  visibility: visible;
+  opacity: 0.8;
 }
 
+.image-gallery3 {
+  position: relative;
+}
+.image-gallery3 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery3 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery3:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.image-gallery4 {
+  position: relative;
+}
+.image-gallery4 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery4 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery4:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+.image-gallery5 {
+  position: relative;
+}
+.image-gallery5 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery5 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery5:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+.image-gallery6 {
+  position: relative;
+}
+.image-gallery6 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery6 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery6:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
 /* end  */
 
 /* section download */
@@ -233,7 +394,7 @@
   align-content: center;
 }
 .download h2 {
-  margin-top: 10rem;
+  margin-top: 6rem;
   color: white;
   font-size: calc(1.325rem + 0.9vw);
   font-weight: 100;
@@ -251,4 +412,39 @@
 .download button a {
   color: #000000;
   text-decoration: none;
+}
+
+/* form  */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form-header {
+  width: 40vw;
+  align-items: center;
+  align-content: center;
+}
+.form-header h5 {
+  margin-top: 10rem;
+  color: #000000;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 100;
+  /* padding-bottom: 1.5rem; */
+}
+.form-header hr {
+  text-align: center;
+  margin: 1.5rem auto;
+  border: 0;
+  max-width: 3.25rem;
+  height: 0.2rem;
+  background-color: #f4623a;
+  /* color: #f4623a; */
+  opacity: 1;
+}
+.form-header p {
+  color: #6c757d;
+  font-size: 1.15rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
 }
