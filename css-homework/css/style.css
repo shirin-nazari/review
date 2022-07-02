@@ -177,6 +177,7 @@
 .main {
   margin-top: 4rem;
   display: flex;
+  flex-wrap: wrap;
   padding: 10px;
   text-align: center;
   justify-content: space-evenly;
@@ -422,8 +423,7 @@
 }
 .form-header {
   width: 40vw;
-  align-items: center;
-  align-content: center;
+  align-self: center;
 }
 .form-header h5 {
   margin-top: 10rem;
@@ -448,3 +448,55 @@
   margin-bottom: 3rem;
   font-weight: 500;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 40vw;
+}
+form input {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: #ababab solid 0.8px;
+}
+form textarea {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: #ababab solid 0.8px;
+}
+input[type='submit'] {
+  background-color: #f4623a;
+  border: none;
+  border-radius: 4rem;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.phone {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.phone i {
+  color: #bfbfbf;
+  font-size: 3rem;
+}
+.phone p {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+/* end form */
+
+/* footer */
+#footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  height: 15vh;
+  text-align: center;
+  margin-top: 10rem;
+  padding-top: 2.5rem;
+}
+/* finish */
