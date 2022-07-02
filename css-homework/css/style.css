@@ -1,0 +1,550 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather Sans', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.header-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url('http://powerindoperkasa.com/assets/img/bg-masthead.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0px 30px;
+}
+/* set navbar */
+#navbar {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 1rem;
+  height: 10vh;
+  position: fixed;
+  position: top;
+  z-index: 10;
+}
+#navbar-right {
+  width: 30vw;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.logo:hover {
+  color: rgb(255, 255, 255);
+}
+.group-items {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.nav-item:hover {
+  color: rgb(255, 255, 255);
+}
+/* end navbar */
+/* add header style */
+#center-header {
+  text-align: center;
+  width: 40vw;
+  height: 50vh;
+  padding: 10;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  line-height: 1.2;
+  margin-top: 10rem;
+}
+#center-header h1 {
+  line-height: 1.2em;
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+}
+#center-header hr {
+  text-align: center;
+  margin: 1.5rem auto;
+  border: 0;
+  max-width: 3.25rem;
+  height: 0.2rem;
+  background-color: #f4623a;
+  opacity: 1;
+}
+#center-header p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.15rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+#center-header button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: #f4623a;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10rem;
+}
+#center-header button a {
+  color: white;
+  text-decoration: none;
+}
+/* end header style  */
+/* add background orange */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.main-header-bg {
+  background-color: #f4623a;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+.main-header {
+  width: 40vw;
+  text-align: center;
+  align-self: center;
+  margin-top: 6rem;
+}
+.main-header h2 {
+  line-height: 1.2em;
+  color: white;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+}
+.main-header hr {
+  text-align: center;
+  margin: 1.5rem auto;
+  border: 0;
+  max-width: 3.25rem;
+  height: 0.2rem;
+  background-color: white;
+  opacity: 1;
+}
+.main-header p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+.main-header button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: white;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10rem;
+}
+.main-header button a {
+  color: #000000;
+  text-decoration: none;
+}
+/* end */
+/* second main  */
+.second-main {
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.second-main .header h3 {
+  margin-top: 6rem;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 100;
+}
+.second-main .header hr {
+  text-align: center;
+  margin: 1.5rem auto;
+  border: 0;
+  max-width: 3.25rem;
+  height: 0.2rem;
+  background-color: #f4623a;
+  opacity: 1;
+}
+.main {
+  margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.main article {
+  width: 18vw;
+}
+.main article i {
+  color: #f4623a;
+  font-size: calc(1.375rem + 1.5vw);
+  padding: 0.5em;
+}
+.main article h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 100;
+}
+.main article p {
+  color: #6c757d;
+}
+/* end */
+/* gallery */
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  background-color: #212529;
+  height: auto;
+}
+.image-gallery {
+  position: relative;
+}
+.image-gallery img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+.image-gallery2 {
+  position: relative;
+}
+.image-gallery2 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery2 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery2:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.image-gallery3 {
+  position: relative;
+}
+.image-gallery3 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery3 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery3:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.image-gallery4 {
+  position: relative;
+}
+.image-gallery4 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery4 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery4:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+.image-gallery5 {
+  position: relative;
+}
+.image-gallery5 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery5 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery5:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+.image-gallery6 {
+  position: relative;
+}
+.image-gallery6 img {
+  max-width: 100%;
+  width: 32.8vw;
+  height: auto;
+}
+.image-gallery6 span {
+  visibility: hidden;
+  opacity: 0;
+  width: 32.8vw;
+  text-align: center;
+  color: white;
+  padding-top: 3.5rem;
+  background-color: rgba(255, 109, 5, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.image-gallery6:hover span {
+  visibility: visible;
+  opacity: 0.8;
+}
+/* end  */
+
+/* section download */
+.download {
+  height: 50vh;
+  width: 100vw;
+  background-color: #212529;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.download h2 {
+  margin-top: 6rem;
+  color: white;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 100;
+  padding-bottom: 1.5rem;
+}
+.download button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: white;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10rem;
+}
+.download button a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* form  */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form-header {
+  width: 40vw;
+  align-self: center;
+}
+.form-header h5 {
+  margin-top: 10rem;
+  color: #000000;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 100;
+}
+.form-header hr {
+  text-align: center;
+  margin: 1.5rem auto;
+  border: 0;
+  max-width: 3.25rem;
+  height: 0.2rem;
+  background-color: #f4623a;
+  opacity: 1;
+}
+.form-header p {
+  color: #6c757d;
+  font-size: 1.15rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 40vw;
+}
+form input {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: #ababab solid 0.8px;
+}
+form textarea {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: #ababab solid 0.8px;
+}
+input[type='submit'] {
+  background-color: #f4623a;
+  border: none;
+  border-radius: 4rem;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.phone {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.phone i {
+  color: #bfbfbf;
+  font-size: 3rem;
+}
+.phone p {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+/* end form */
+
+/* footer */
+#footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  height: 15vh;
+  text-align: center;
+  margin-top: 10rem;
+  padding-top: 2.5rem;
+}
+/* finish */
+
+@media screen and (max-width: 1024px) {
+  #navbar {
+    background-color: #f8f8f8;
+    color: #000000;
+  }
+  #navbar .group-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #center-header h1 {
+    font-size: 1rem;
+  }
+  #center-header p {
+    font-size: 0.5rem;
+  }
+  main .main-header-bg h2 {
+    font-size: 0.9rem;
+  }
+  main .main-header-bg p {
+    font-size: 0.4rem;
+  }
+  /* for fix  */
+  main .second-main .header {
+    font-size: 1rem;
+  }
+  main .gallery-section {
+    flex-direction: column;
+  }
+  main .gallery-section img {
+    width: 100%;
+  }
+  main .download {
+    width: 100%;
+    padding-top: 10rem;
+    height: 70vh;
+  }
+}
