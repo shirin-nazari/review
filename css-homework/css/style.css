@@ -80,7 +80,6 @@
   max-width: 3.25rem;
   height: 0.2rem;
   background-color: #f4623a;
-  /* color: #f4623a; */
   opacity: 1;
 }
 #center-header p {
@@ -137,7 +136,6 @@ main {
   max-width: 3.25rem;
   height: 0.2rem;
   background-color: white;
-  /* color: #f4623a; */
   opacity: 1;
 }
 .main-header p {
@@ -444,7 +442,6 @@ main {
   color: #000000;
   font-size: calc(1.325rem + 0.9vw);
   font-weight: 100;
-  /* padding-bottom: 1.5rem; */
 }
 .form-header hr {
   text-align: center;
@@ -453,7 +450,6 @@ main {
   max-width: 3.25rem;
   height: 0.2rem;
   background-color: #f4623a;
-  /* color: #f4623a; */
   opacity: 1;
 }
 .form-header p {
@@ -539,10 +535,6 @@ input[type='submit'] {
   /* for fix  */
   main .second-main .header {
     font-size: 1rem;
-  }
-  main .second-main .main {
-    /* flex-direction: column; */
-    flex-wrap: wrap;
   }
   main .gallery-section {
     flex-direction: column;
