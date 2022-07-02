@@ -104,6 +104,11 @@
 }
 /* end header style  */
 /* add background orange */
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .main-header-bg {
   background-color: #f4623a;
   display: flex;
@@ -156,7 +161,7 @@
 /* end */
 /* second main  */
 .second-main {
-  height: 70vh;
+  height: 90vh;
   text-align: center;
 }
 .second-main .header h3 {
@@ -186,6 +191,9 @@
 }
 .main article {
   width: 18vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .main article i {
   color: #f4623a;
