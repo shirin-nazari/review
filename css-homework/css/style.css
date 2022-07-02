@@ -107,10 +107,13 @@
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
 }
 .main-header-bg {
   background-color: #f4623a;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   height: 70vh;
@@ -119,9 +122,7 @@ main {
   width: 40vw;
   text-align: center;
   align-self: center;
-  align-content: center;
   margin-top: 6rem;
-  align-items: center;
 }
 .main-header h2 {
   line-height: 1.2em;
@@ -161,11 +162,16 @@ main {
 /* end */
 /* second main  */
 .second-main {
-  height: 90vh;
+  width: 100vw;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 .second-main .header h3 {
-  margin-top: 10rem;
+  margin-top: 6rem;
   font-size: calc(1.325rem + 0.9vw);
   font-weight: 100;
 }
@@ -176,24 +182,21 @@ main {
   max-width: 3.25rem;
   height: 0.2rem;
   background-color: #f4623a;
-  /* color: #f4623a; */
   opacity: 1;
 }
 .main {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
   padding: 10px;
   text-align: center;
   justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
+  margin-bottom: 2rem;
 }
 .main article {
   width: 18vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 .main article i {
   color: #f4623a;
@@ -212,7 +215,9 @@ main {
 .gallery-section {
   display: flex;
   flex-wrap: wrap;
+  width: 100vw;
   background-color: #212529;
+  height: auto;
 }
 .image-gallery {
   position: relative;
@@ -395,6 +400,7 @@ main {
 /* section download */
 .download {
   height: 50vh;
+  width: 100vw;
   background-color: #212529;
   display: flex;
   flex-direction: column;
@@ -508,3 +514,45 @@ input[type='submit'] {
   padding-top: 2.5rem;
 }
 /* finish */
+
+@media screen and (max-width: 1024px) {
+  #navbar {
+    background-color: #f8f8f8;
+    color: #000000;
+  }
+  #navbar .group-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #center-header h1 {
+    font-size: 1rem;
+  }
+  #center-header p {
+    font-size: 0.5rem;
+  }
+  main .main-header-bg h2 {
+    font-size: 0.9rem;
+  }
+  main .main-header-bg p {
+    font-size: 0.4rem;
+  }
+  /* for fix  */
+  main .second-main .header {
+    font-size: 1rem;
+  }
+  main .second-main .main {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+  main .gallery-section {
+    flex-direction: column;
+  }
+  main .gallery-section img {
+    width: 100%;
+  }
+  main .download {
+    width: 100%;
+    padding-top: 10rem;
+    height: 70vh;
+  }
+}
