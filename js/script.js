@@ -35,3 +35,14 @@ if (age >= 0 && age <= 5) {
 } else {
   console.log('your ticket is free');
 }
+
+// codewars
+// 7 kyu
+// Training JS #33: methods of Math---max() min() and abs()
+function maxMin(arr1, arr2) {
+  const arr = arr2.map((v, i) => v - arr1[i], 0);
+  return [
+    Math.max(...arr.map((v) => Math.abs(v))),
+    Math.min(...arr.map((i) => Math.abs(i))),
+  ];
+}
